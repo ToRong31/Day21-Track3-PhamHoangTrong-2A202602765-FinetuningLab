@@ -1,0 +1,9 @@
+[
+  {
+    "run": "correct",
+    "target": 0.97,
+    "format": 1.0,
+    "latency_ms": 1428.0,
+    "n": 50
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "same_loaded_model": true,
+  "adapters": [
+    "correct",
+    "attn_only"
+  ],
+  "ticket": "Cho mình hỏi, mình đặt chuột không dây mã đơn VN232232. Cho tôi trả lại. Gấp. Shop hỗ trợ tốt.",
+  "outputs": [
+    {
+      "adapter": "correct",
+      "prediction": "{\"intent\": \"doi_tra\", \"urgency\": \"cao\", \"product\": \"chuột không dây\", \"sentiment\": \"tich_cuc\"}"
+    },
+    {
+      "adapter": "attn_only",
+      "prediction": "{\"intent\": \"doi_tra\", \"urgency\": \"cao\", \"product\": \"chuột không dây\", \"sentiment\": \"tich_cuc\"}"
+    }
+  ],
+  "note": "Sequential adapter selection with set_adapter on one loaded base; not concurrent serving."
+}

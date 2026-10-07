@@ -1,0 +1,22 @@
+{
+  "repo_id": "trongph/lab21-qwen35-triage-vi",
+  "url": "https://huggingface.co/trongph/lab21-qwen35-triage-vi",
+  "commit_sha": "9d6f0e554f4cf7224004a2cc3c3456d0d5b27b87",
+  "private": false,
+  "anonymous_access_verified": true,
+  "adapter_weights_sha256_verified": true,
+  "published_on": "2026-10-07",
+  "source_adapter": "adapters/correct",
+  "files_sha256": {
+    "adapter_config.json": "f91bd691841a4c65008417af14031aee2da7439a5771dcc3342f04dd83026432",
+    "adapter_model.safetensors": "ee830e38d26db57fd9dee9afa2f8132ecf3d3474658fa33db5ef64ea0667820e",
+    "chat_template.jinja": "8452ca85cb1e0ff04304c02f417a53305d5ba17f6eb9d5693343ad8355f985a8",
+    "README.md": "0e85ed122c007de57514d708ff26cb778790a27a9b5b3b4133a87c0d5b2c7a09",
+    "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f",
+    "tokenizer_config.json": "26c76b196814bbcde43155e153b16e8b1f17724707250fbc4f6567446f1d4900",
+    "evaluation/baselines_frozen.json": "6f678497a92061202094cfb0fe6df2feb6deb95f62f8894490f664cce3349ef8",
+    "evaluation/merge_check.json": "813e9c73549c051c2cd5f7297c634fb57a3d12de16444251beed8bcc76d54dfd",
+    "evaluation/runs.csv": "34897ac405a82b6d282586179842308225d4d03fb3606b2006c3960a24fec658",
+    "evaluation/verdict.json": "87ee8ede6758ffb6d43b93cb43e29fcb58b27be39d0f34e7d42059e167e09e87"
+  }
+}

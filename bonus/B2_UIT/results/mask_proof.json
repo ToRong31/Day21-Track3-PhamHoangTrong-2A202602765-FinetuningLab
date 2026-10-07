@@ -1,0 +1,10 @@
+{
+  "mask_mode": "assistant-only",
+  "n_supervised": 36,
+  "n_total": 116,
+  "supervised_fraction": 0.3103,
+  "answer_is_supervised": true,
+  "question_is_masked": true,
+  "supervised_preview": "</think>\n\n{\"intent\": \"hoc_phi\", \"urgency\": \"cao\", \"product\": \"học phí\", \"sentiment\": \"tieu_cuc\"}<|im_end|>\n",
+  "masked_preview": "<|im_start|>system\nPhân loại ticket sau.<|im_end|>\n<|im_start|>user\nChào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: học phí. Em đã chuyển khoản học phí nhưng trạng thái thanh toán vẫn chưa cập nhật. Em cần xử lý trong hôm nay vì hạn chót là tối nay. Em rất thất vọng về trải nghiệm hỗ trợ vừa rồi.<|im_en"
+}

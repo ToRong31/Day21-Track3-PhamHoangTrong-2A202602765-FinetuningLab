@@ -1,0 +1,2 @@
+run,label,tier,model,precision,placement,n_target_modules,r,lora_alpha,learning_rate,load_in_4bit,trainable_params,train_seconds,peak_vram_gb,final_loss,mask_mode,max_steps
+correct,B4 text-linear r=8,T4,unsloth/Qwen3.5-4B,fp16,text-linear,12,8,16,0.0001,False,16232448,407.1,8.51,0.7849,assistant-only,30

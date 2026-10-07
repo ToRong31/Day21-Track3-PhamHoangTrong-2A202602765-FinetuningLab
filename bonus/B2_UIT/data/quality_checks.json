@@ -1,0 +1,33 @@
+{
+  "train_seed": 240,
+  "eval_target": 48,
+  "train_scenarios": 60,
+  "eval_scenarios": 12,
+  "exact_duplicates": 0,
+  "shared_scenarios": 0,
+  "train_intents": {
+    "hoc_phi": 40,
+    "dang_ky_mon": 40,
+    "lich_hoc": 40,
+    "tai_khoan": 40,
+    "giay_to": 40,
+    "hoc_vu": 40
+  },
+  "eval_intents": {
+    "hoc_phi": 8,
+    "dang_ky_mon": 8,
+    "lich_hoc": 8,
+    "tai_khoan": 8,
+    "giay_to": 8,
+    "hoc_vu": 8
+  },
+  "review_status": "AI semantic review complete; independent human review not recorded.",
+  "limitations": "Synthetic templates and explicit service/urgency/sentiment cues; not real UIT requests.",
+  "reviewer": "Codex AI assistant",
+  "review_date": "2026-10-07",
+  "reviewed_rows": 288,
+  "label_errors_found": 0,
+  "data_rows_changed": 0,
+  "train_validation_shared_scenarios": 19,
+  "semantic_review_file": "SEMANTIC_REVIEW.json"
+}

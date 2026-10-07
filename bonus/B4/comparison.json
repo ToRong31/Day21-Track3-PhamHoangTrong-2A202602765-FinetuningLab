@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 8,
+    "training": {
+      "run": "correct",
+      "label": "B4 text-linear r=8",
+      "tier": "T4",
+      "model": "unsloth/Qwen3.5-4B",
+      "precision": "fp16",
+      "placement": "text-linear",
+      "n_target_modules": "12",
+      "r": "8",
+      "lora_alpha": "16",
+      "learning_rate": "0.0001",
+      "load_in_4bit": "False",
+      "trainable_params": "16232448",
+      "train_seconds": "407.1",
+      "peak_vram_gb": "8.51",
+      "final_loss": "0.7849",
+      "mask_mode": "assistant-only",
+      "max_steps": "30"
+    },
+    "scores": {
+      "run": "(c) LoRA fine-tune",
+      "target": 0.865,
+      "regression": 0.7022,
+      "format": 1.0,
+      "latency_ms": 1422.7,
+      "n": 50
+    }
+  },
+  {
+    "rank": 16,
+    "training": {
+      "run": "correct",
+      "label": "B4 text-linear r=16",
+      "tier": "T4",
+      "model": "unsloth/Qwen3.5-4B",
+      "precision": "fp16",
+      "placement": "text-linear",
+      "n_target_modules": "12",
+      "r": "16",
+      "lora_alpha": "32",
+      "learning_rate": "0.0001",
+      "load_in_4bit": "False",
+      "trainable_params": "32464896",
+      "train_seconds": "397.1",
+      "peak_vram_gb": "8.78",
+      "final_loss": "0.6269",
+      "mask_mode": "assistant-only",
+      "max_steps": "30"
+    },
+    "scores": {
+      "run": "(c) LoRA fine-tune",
+      "target": 0.97,
+      "regression": 0.5889,
+      "format": 1.0,
+      "latency_ms": 1428.0,
+      "n": 50
+    }
+  },
+  {
+    "rank": 64,
+    "training": {
+      "run": "correct",
+      "label": "B4 text-linear r=64",
+      "tier": "T4",
+      "model": "unsloth/Qwen3.5-4B",
+      "precision": "fp16",
+      "placement": "text-linear",
+      "n_target_modules": "12",
+      "r": "64",
+      "lora_alpha": "128",
+      "learning_rate": "0.0001",
+      "load_in_4bit": "False",
+      "trainable_params": "129859584",
+      "train_seconds": "395.9",
+      "peak_vram_gb": "10.47",
+      "final_loss": "0.5614",
+      "mask_mode": "assistant-only",
+      "max_steps": "30"
+    },
+    "scores": {
+      "run": "(c) LoRA fine-tune",
+      "target": 1.0,
+      "regression": 0.0667,
+      "format": 1.0,
+      "latency_ms": 1385.8,
+      "n": 50
+    }
+  }
+]

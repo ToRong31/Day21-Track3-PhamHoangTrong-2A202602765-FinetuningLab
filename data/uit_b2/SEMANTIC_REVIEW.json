@@ -1,0 +1,1783 @@
+{
+  "review_date": "2026-10-07",
+  "reviewer": "Codex AI assistant",
+  "method": "AI semantic review of all 72 scenario texts and label policy; exhaustive deterministic checks of all 288 instantiated rows. Not independent human annotation.",
+  "reviewed_rows": 288,
+  "reviewed_scenarios": 72,
+  "label_errors_found": 0,
+  "data_rows_changed": 0,
+  "dataset_sha256": {
+    "train_seed.jsonl": "129d285cc33babaf5ea7c8e96c401116ed3b8e3c60bc98134b4e118a93afcd65",
+    "eval_target.jsonl": "bca57ed3f8c6e66822a603ca10bd03652e5e5ee95e9b4d292c0693d00eb2463f",
+    "eval_regression.jsonl": "9c6ba90ea86e28fbc7102bf4cc4cb1e23c4668cf95bfcae55c3c114d34dc133b",
+    "holdout_secret.jsonl": "be3dd38d058871a54b0c51a071b1fb32eb0a9b86379555e575e5170b50408194"
+  },
+  "train_validation_shared_scenarios": 19,
+  "findings": [
+    {
+      "severity": "limitation",
+      "ids": [
+        "hoc_vu-00",
+        "hoc_vu-10"
+      ],
+      "detail": "Training asks about preserving study results; evaluation asks about temporary leave. Semantically related despite distinct scenario IDs."
+    },
+    {
+      "severity": "limitation",
+      "ids": [
+        "hoc_phi-02",
+        "hoc_phi-08",
+        "giay_to-03",
+        "giay_to-11"
+      ],
+      "detail": "Document corrections route by service context: fee receipts to hoc_phi; student certificates to giay_to. Context must be retained."
+    },
+    {
+      "severity": "limitation",
+      "ids": [
+        "dang_ky_mon-08",
+        "lich_hoc-08"
+      ],
+      "detail": "Conflicting class registration routes to dang_ky_mon; conflicting exam schedule routes to lich_hoc."
+    },
+    {
+      "severity": "limitation",
+      "detail": "Service names reveal intent; urgency and sentiment use explicit repeated cues. Target accuracy measures this synthetic task, not real support quality."
+    },
+    {
+      "severity": "limitation",
+      "detail": "Positive sentiment describes prior support even when a current issue exists; label follows explicit expressed sentiment, not inferred frustration."
+    }
+  ],
+  "row_checks": [
+    {
+      "id": "hoc_phi-00-0",
+      "scenario_id": "hoc_phi-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-00-1",
+      "scenario_id": "hoc_phi-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-00-2",
+      "scenario_id": "hoc_phi-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-00-3",
+      "scenario_id": "hoc_phi-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-01-0",
+      "scenario_id": "hoc_phi-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-01-1",
+      "scenario_id": "hoc_phi-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-01-2",
+      "scenario_id": "hoc_phi-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-01-3",
+      "scenario_id": "hoc_phi-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-02-0",
+      "scenario_id": "hoc_phi-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-02-1",
+      "scenario_id": "hoc_phi-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-02-2",
+      "scenario_id": "hoc_phi-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-02-3",
+      "scenario_id": "hoc_phi-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-03-0",
+      "scenario_id": "hoc_phi-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-03-1",
+      "scenario_id": "hoc_phi-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-03-2",
+      "scenario_id": "hoc_phi-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-03-3",
+      "scenario_id": "hoc_phi-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-04-0",
+      "scenario_id": "hoc_phi-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-04-1",
+      "scenario_id": "hoc_phi-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-04-2",
+      "scenario_id": "hoc_phi-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-04-3",
+      "scenario_id": "hoc_phi-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-05-0",
+      "scenario_id": "hoc_phi-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-05-1",
+      "scenario_id": "hoc_phi-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-05-2",
+      "scenario_id": "hoc_phi-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-05-3",
+      "scenario_id": "hoc_phi-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-06-0",
+      "scenario_id": "hoc_phi-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-06-1",
+      "scenario_id": "hoc_phi-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-06-2",
+      "scenario_id": "hoc_phi-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-06-3",
+      "scenario_id": "hoc_phi-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-07-0",
+      "scenario_id": "hoc_phi-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-07-1",
+      "scenario_id": "hoc_phi-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-07-2",
+      "scenario_id": "hoc_phi-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-07-3",
+      "scenario_id": "hoc_phi-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-08-0",
+      "scenario_id": "hoc_phi-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-08-1",
+      "scenario_id": "hoc_phi-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-08-2",
+      "scenario_id": "hoc_phi-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-08-3",
+      "scenario_id": "hoc_phi-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-09-0",
+      "scenario_id": "hoc_phi-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-09-1",
+      "scenario_id": "hoc_phi-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-09-2",
+      "scenario_id": "hoc_phi-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-09-3",
+      "scenario_id": "hoc_phi-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-00-0",
+      "scenario_id": "dang_ky_mon-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-00-1",
+      "scenario_id": "dang_ky_mon-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-00-2",
+      "scenario_id": "dang_ky_mon-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-00-3",
+      "scenario_id": "dang_ky_mon-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-01-0",
+      "scenario_id": "dang_ky_mon-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-01-1",
+      "scenario_id": "dang_ky_mon-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-01-2",
+      "scenario_id": "dang_ky_mon-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-01-3",
+      "scenario_id": "dang_ky_mon-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-02-0",
+      "scenario_id": "dang_ky_mon-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-02-1",
+      "scenario_id": "dang_ky_mon-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-02-2",
+      "scenario_id": "dang_ky_mon-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-02-3",
+      "scenario_id": "dang_ky_mon-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-03-0",
+      "scenario_id": "dang_ky_mon-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-03-1",
+      "scenario_id": "dang_ky_mon-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-03-2",
+      "scenario_id": "dang_ky_mon-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-03-3",
+      "scenario_id": "dang_ky_mon-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-04-0",
+      "scenario_id": "dang_ky_mon-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-04-1",
+      "scenario_id": "dang_ky_mon-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-04-2",
+      "scenario_id": "dang_ky_mon-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-04-3",
+      "scenario_id": "dang_ky_mon-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-05-0",
+      "scenario_id": "dang_ky_mon-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-05-1",
+      "scenario_id": "dang_ky_mon-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-05-2",
+      "scenario_id": "dang_ky_mon-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-05-3",
+      "scenario_id": "dang_ky_mon-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-06-0",
+      "scenario_id": "dang_ky_mon-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-06-1",
+      "scenario_id": "dang_ky_mon-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-06-2",
+      "scenario_id": "dang_ky_mon-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-06-3",
+      "scenario_id": "dang_ky_mon-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-07-0",
+      "scenario_id": "dang_ky_mon-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-07-1",
+      "scenario_id": "dang_ky_mon-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-07-2",
+      "scenario_id": "dang_ky_mon-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-07-3",
+      "scenario_id": "dang_ky_mon-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-08-0",
+      "scenario_id": "dang_ky_mon-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-08-1",
+      "scenario_id": "dang_ky_mon-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-08-2",
+      "scenario_id": "dang_ky_mon-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-08-3",
+      "scenario_id": "dang_ky_mon-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-09-0",
+      "scenario_id": "dang_ky_mon-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-09-1",
+      "scenario_id": "dang_ky_mon-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-09-2",
+      "scenario_id": "dang_ky_mon-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-09-3",
+      "scenario_id": "dang_ky_mon-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-00-0",
+      "scenario_id": "lich_hoc-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-00-1",
+      "scenario_id": "lich_hoc-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-00-2",
+      "scenario_id": "lich_hoc-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-00-3",
+      "scenario_id": "lich_hoc-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-01-0",
+      "scenario_id": "lich_hoc-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-01-1",
+      "scenario_id": "lich_hoc-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-01-2",
+      "scenario_id": "lich_hoc-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-01-3",
+      "scenario_id": "lich_hoc-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-02-0",
+      "scenario_id": "lich_hoc-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-02-1",
+      "scenario_id": "lich_hoc-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-02-2",
+      "scenario_id": "lich_hoc-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-02-3",
+      "scenario_id": "lich_hoc-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-03-0",
+      "scenario_id": "lich_hoc-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-03-1",
+      "scenario_id": "lich_hoc-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-03-2",
+      "scenario_id": "lich_hoc-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-03-3",
+      "scenario_id": "lich_hoc-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-04-0",
+      "scenario_id": "lich_hoc-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-04-1",
+      "scenario_id": "lich_hoc-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-04-2",
+      "scenario_id": "lich_hoc-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-04-3",
+      "scenario_id": "lich_hoc-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-05-0",
+      "scenario_id": "lich_hoc-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-05-1",
+      "scenario_id": "lich_hoc-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-05-2",
+      "scenario_id": "lich_hoc-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-05-3",
+      "scenario_id": "lich_hoc-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-06-0",
+      "scenario_id": "lich_hoc-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-06-1",
+      "scenario_id": "lich_hoc-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-06-2",
+      "scenario_id": "lich_hoc-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-06-3",
+      "scenario_id": "lich_hoc-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-07-0",
+      "scenario_id": "lich_hoc-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-07-1",
+      "scenario_id": "lich_hoc-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-07-2",
+      "scenario_id": "lich_hoc-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-07-3",
+      "scenario_id": "lich_hoc-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-08-0",
+      "scenario_id": "lich_hoc-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-08-1",
+      "scenario_id": "lich_hoc-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-08-2",
+      "scenario_id": "lich_hoc-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-08-3",
+      "scenario_id": "lich_hoc-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-09-0",
+      "scenario_id": "lich_hoc-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-09-1",
+      "scenario_id": "lich_hoc-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-09-2",
+      "scenario_id": "lich_hoc-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-09-3",
+      "scenario_id": "lich_hoc-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-00-0",
+      "scenario_id": "tai_khoan-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-00-1",
+      "scenario_id": "tai_khoan-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-00-2",
+      "scenario_id": "tai_khoan-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-00-3",
+      "scenario_id": "tai_khoan-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-01-0",
+      "scenario_id": "tai_khoan-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-01-1",
+      "scenario_id": "tai_khoan-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-01-2",
+      "scenario_id": "tai_khoan-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-01-3",
+      "scenario_id": "tai_khoan-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-02-0",
+      "scenario_id": "tai_khoan-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-02-1",
+      "scenario_id": "tai_khoan-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-02-2",
+      "scenario_id": "tai_khoan-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-02-3",
+      "scenario_id": "tai_khoan-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-03-0",
+      "scenario_id": "tai_khoan-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-03-1",
+      "scenario_id": "tai_khoan-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-03-2",
+      "scenario_id": "tai_khoan-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-03-3",
+      "scenario_id": "tai_khoan-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-04-0",
+      "scenario_id": "tai_khoan-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-04-1",
+      "scenario_id": "tai_khoan-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-04-2",
+      "scenario_id": "tai_khoan-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-04-3",
+      "scenario_id": "tai_khoan-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-05-0",
+      "scenario_id": "tai_khoan-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-05-1",
+      "scenario_id": "tai_khoan-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-05-2",
+      "scenario_id": "tai_khoan-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-05-3",
+      "scenario_id": "tai_khoan-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-06-0",
+      "scenario_id": "tai_khoan-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-06-1",
+      "scenario_id": "tai_khoan-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-06-2",
+      "scenario_id": "tai_khoan-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-06-3",
+      "scenario_id": "tai_khoan-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-07-0",
+      "scenario_id": "tai_khoan-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-07-1",
+      "scenario_id": "tai_khoan-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-07-2",
+      "scenario_id": "tai_khoan-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-07-3",
+      "scenario_id": "tai_khoan-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-08-0",
+      "scenario_id": "tai_khoan-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-08-1",
+      "scenario_id": "tai_khoan-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-08-2",
+      "scenario_id": "tai_khoan-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-08-3",
+      "scenario_id": "tai_khoan-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-09-0",
+      "scenario_id": "tai_khoan-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-09-1",
+      "scenario_id": "tai_khoan-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-09-2",
+      "scenario_id": "tai_khoan-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-09-3",
+      "scenario_id": "tai_khoan-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-00-0",
+      "scenario_id": "giay_to-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-00-1",
+      "scenario_id": "giay_to-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-00-2",
+      "scenario_id": "giay_to-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-00-3",
+      "scenario_id": "giay_to-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-01-0",
+      "scenario_id": "giay_to-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-01-1",
+      "scenario_id": "giay_to-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-01-2",
+      "scenario_id": "giay_to-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-01-3",
+      "scenario_id": "giay_to-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-02-0",
+      "scenario_id": "giay_to-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-02-1",
+      "scenario_id": "giay_to-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-02-2",
+      "scenario_id": "giay_to-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-02-3",
+      "scenario_id": "giay_to-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-03-0",
+      "scenario_id": "giay_to-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-03-1",
+      "scenario_id": "giay_to-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-03-2",
+      "scenario_id": "giay_to-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-03-3",
+      "scenario_id": "giay_to-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-04-0",
+      "scenario_id": "giay_to-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-04-1",
+      "scenario_id": "giay_to-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-04-2",
+      "scenario_id": "giay_to-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-04-3",
+      "scenario_id": "giay_to-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-05-0",
+      "scenario_id": "giay_to-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-05-1",
+      "scenario_id": "giay_to-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-05-2",
+      "scenario_id": "giay_to-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-05-3",
+      "scenario_id": "giay_to-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-06-0",
+      "scenario_id": "giay_to-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-06-1",
+      "scenario_id": "giay_to-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-06-2",
+      "scenario_id": "giay_to-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-06-3",
+      "scenario_id": "giay_to-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-07-0",
+      "scenario_id": "giay_to-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-07-1",
+      "scenario_id": "giay_to-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-07-2",
+      "scenario_id": "giay_to-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-07-3",
+      "scenario_id": "giay_to-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-08-0",
+      "scenario_id": "giay_to-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-08-1",
+      "scenario_id": "giay_to-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-08-2",
+      "scenario_id": "giay_to-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-08-3",
+      "scenario_id": "giay_to-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-09-0",
+      "scenario_id": "giay_to-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-09-1",
+      "scenario_id": "giay_to-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-09-2",
+      "scenario_id": "giay_to-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-09-3",
+      "scenario_id": "giay_to-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-00-0",
+      "scenario_id": "hoc_vu-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-00-1",
+      "scenario_id": "hoc_vu-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-00-2",
+      "scenario_id": "hoc_vu-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-00-3",
+      "scenario_id": "hoc_vu-00",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-01-0",
+      "scenario_id": "hoc_vu-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-01-1",
+      "scenario_id": "hoc_vu-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-01-2",
+      "scenario_id": "hoc_vu-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-01-3",
+      "scenario_id": "hoc_vu-01",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-02-0",
+      "scenario_id": "hoc_vu-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-02-1",
+      "scenario_id": "hoc_vu-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-02-2",
+      "scenario_id": "hoc_vu-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-02-3",
+      "scenario_id": "hoc_vu-02",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-03-0",
+      "scenario_id": "hoc_vu-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-03-1",
+      "scenario_id": "hoc_vu-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-03-2",
+      "scenario_id": "hoc_vu-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-03-3",
+      "scenario_id": "hoc_vu-03",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-04-0",
+      "scenario_id": "hoc_vu-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-04-1",
+      "scenario_id": "hoc_vu-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-04-2",
+      "scenario_id": "hoc_vu-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-04-3",
+      "scenario_id": "hoc_vu-04",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-05-0",
+      "scenario_id": "hoc_vu-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-05-1",
+      "scenario_id": "hoc_vu-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-05-2",
+      "scenario_id": "hoc_vu-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-05-3",
+      "scenario_id": "hoc_vu-05",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-06-0",
+      "scenario_id": "hoc_vu-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-06-1",
+      "scenario_id": "hoc_vu-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-06-2",
+      "scenario_id": "hoc_vu-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-06-3",
+      "scenario_id": "hoc_vu-06",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-07-0",
+      "scenario_id": "hoc_vu-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-07-1",
+      "scenario_id": "hoc_vu-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-07-2",
+      "scenario_id": "hoc_vu-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-07-3",
+      "scenario_id": "hoc_vu-07",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-08-0",
+      "scenario_id": "hoc_vu-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-08-1",
+      "scenario_id": "hoc_vu-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-08-2",
+      "scenario_id": "hoc_vu-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-08-3",
+      "scenario_id": "hoc_vu-08",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-09-0",
+      "scenario_id": "hoc_vu-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-09-1",
+      "scenario_id": "hoc_vu-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-09-2",
+      "scenario_id": "hoc_vu-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-09-3",
+      "scenario_id": "hoc_vu-09",
+      "split": "train_seed",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-10-0",
+      "scenario_id": "hoc_phi-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-10-1",
+      "scenario_id": "hoc_phi-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-10-2",
+      "scenario_id": "hoc_phi-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-10-3",
+      "scenario_id": "hoc_phi-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-11-0",
+      "scenario_id": "hoc_phi-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-11-1",
+      "scenario_id": "hoc_phi-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-11-2",
+      "scenario_id": "hoc_phi-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_phi-11-3",
+      "scenario_id": "hoc_phi-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-10-0",
+      "scenario_id": "dang_ky_mon-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-10-1",
+      "scenario_id": "dang_ky_mon-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-10-2",
+      "scenario_id": "dang_ky_mon-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-10-3",
+      "scenario_id": "dang_ky_mon-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-11-0",
+      "scenario_id": "dang_ky_mon-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-11-1",
+      "scenario_id": "dang_ky_mon-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-11-2",
+      "scenario_id": "dang_ky_mon-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "dang_ky_mon-11-3",
+      "scenario_id": "dang_ky_mon-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-10-0",
+      "scenario_id": "lich_hoc-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-10-1",
+      "scenario_id": "lich_hoc-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-10-2",
+      "scenario_id": "lich_hoc-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-10-3",
+      "scenario_id": "lich_hoc-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-11-0",
+      "scenario_id": "lich_hoc-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-11-1",
+      "scenario_id": "lich_hoc-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-11-2",
+      "scenario_id": "lich_hoc-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "lich_hoc-11-3",
+      "scenario_id": "lich_hoc-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-10-0",
+      "scenario_id": "tai_khoan-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-10-1",
+      "scenario_id": "tai_khoan-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-10-2",
+      "scenario_id": "tai_khoan-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-10-3",
+      "scenario_id": "tai_khoan-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-11-0",
+      "scenario_id": "tai_khoan-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-11-1",
+      "scenario_id": "tai_khoan-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-11-2",
+      "scenario_id": "tai_khoan-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "tai_khoan-11-3",
+      "scenario_id": "tai_khoan-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-10-0",
+      "scenario_id": "giay_to-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-10-1",
+      "scenario_id": "giay_to-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-10-2",
+      "scenario_id": "giay_to-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-10-3",
+      "scenario_id": "giay_to-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-11-0",
+      "scenario_id": "giay_to-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-11-1",
+      "scenario_id": "giay_to-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-11-2",
+      "scenario_id": "giay_to-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "giay_to-11-3",
+      "scenario_id": "giay_to-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-10-0",
+      "scenario_id": "hoc_vu-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-10-1",
+      "scenario_id": "hoc_vu-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-10-2",
+      "scenario_id": "hoc_vu-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-10-3",
+      "scenario_id": "hoc_vu-10",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-11-0",
+      "scenario_id": "hoc_vu-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-11-1",
+      "scenario_id": "hoc_vu-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-11-2",
+      "scenario_id": "hoc_vu-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    },
+    {
+      "id": "hoc_vu-11-3",
+      "scenario_id": "hoc_vu-11",
+      "split": "eval_target",
+      "label_checks": "pass"
+    }
+  ],
+  "conclusion": "Labels are consistent with the declared synthetic taxonomy. B2 evidence prepared for grading with stated limitations; no human review or awarded points claimed."
+}

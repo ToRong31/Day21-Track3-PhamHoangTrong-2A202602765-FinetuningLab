@@ -1,0 +1,290 @@
+[
+  {
+    "i": 0,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: học phí. Em cần xác nhận k",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"trung_binh\", \"product\": \"học phí\", \"sentiment\": \"tich_cu"
+  },
+  {
+    "i": 1,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: học phí. Em cần xác nhận khoản tiề",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"thap\", \"product\": \"học phí\", \"sentiment\": \"tieu_cuc\"}"
+  },
+  {
+    "i": 2,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: học phí. Em cần xác nhận kho",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"cao\", \"product\": \"học phí\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 3,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: học phí. Em cần xác nhận kho",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"trung_binh\", \"product\": \"học phí\", \"sentiment\": \"tich_cu"
+  },
+  {
+    "i": 4,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: học phí. Em muốn hỏi thủ t",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"thap\", \"product\": \"học phí\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 5,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: học phí. Em muốn hỏi thủ tục kiểm ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"cao\", \"product\": \"học phí\", \"sentiment\": \"tich_cuc\"}"
+  },
+  {
+    "i": 6,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: học phí. Em muốn hỏi thủ tục",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"trung_binh\", \"product\": \"học phí\", \"sentiment\": \"tieu_cu"
+  },
+  {
+    "i": 7,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: học phí. Em muốn hỏi thủ tục",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_phi\", \"urgency\": \"thap\", \"product\": \"học phí\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 8,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: đăng ký môn. Em muốn hỏi c",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"thap\", \"product\": \"đăng ký môn\", \"sentiment\": \"tieu_"
+  },
+  {
+    "i": 9,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: đăng ký môn. Em muốn hỏi cách đăng",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"cao\", \"product\": \"đăng ký môn\", \"sentiment\": \"trung_"
+  },
+  {
+    "i": 10,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: đăng ký môn. Em muốn hỏi các",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"trung_binh\", \"product\": \"đăng ký môn\", \"sentiment\": "
+  },
+  {
+    "i": 11,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: đăng ký môn. Em muốn hỏi các",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"thap\", \"product\": \"đăng ký môn\", \"sentiment\": \"tieu_"
+  },
+  {
+    "i": 12,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: đăng ký môn. Em cần biết q",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"cao\", \"product\": \"đăng ký môn\", \"sentiment\": \"tich_c"
+  },
+  {
+    "i": 13,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: đăng ký môn. Em cần biết quy trình",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"trung_binh\", \"product\": \"đăng ký môn\", \"sentiment\": "
+  },
+  {
+    "i": 14,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: đăng ký môn. Em cần biết quy",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"thap\", \"product\": \"đăng ký môn\", \"sentiment\": \"trung"
+  },
+  {
+    "i": 15,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: đăng ký môn. Em cần biết quy",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"dang_ky_mon\", \"urgency\": \"cao\", \"product\": \"đăng ký môn\", \"sentiment\": \"tich_c"
+  },
+  {
+    "i": 16,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: lịch học. Em muốn hỏi lịch",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"cao\", \"product\": \"lịch học\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 17,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: lịch học. Em muốn hỏi lịch học có ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"trung_binh\", \"product\": \"lịch học\", \"sentiment\": \"tich_"
+  },
+  {
+    "i": 18,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: lịch học. Em muốn hỏi lịch h",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"thap\", \"product\": \"lịch học\", \"sentiment\": \"tieu_cuc\"}"
+  },
+  {
+    "i": 19,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: lịch học. Em muốn hỏi lịch h",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"cao\", \"product\": \"lịch học\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 20,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: lịch học. Em cần tìm lịch ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"trung_binh\", \"product\": \"lịch học\", \"sentiment\": \"tieu_"
+  },
+  {
+    "i": 21,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: lịch học. Em cần tìm lịch thi lại ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"thap\", \"product\": \"lịch học\", \"sentiment\": \"trung_tinh\""
+  },
+  {
+    "i": 22,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: lịch học. Em cần tìm lịch th",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"cao\", \"product\": \"lịch học\", \"sentiment\": \"tich_cuc\"}"
+  },
+  {
+    "i": 23,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: lịch học. Em cần tìm lịch th",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"lich_hoc\", \"urgency\": \"trung_binh\", \"product\": \"lịch học\", \"sentiment\": \"tieu_"
+  },
+  {
+    "i": 24,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: tài khoản sinh viên. Em kh",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"trung_binh\", \"product\": \"tài khoản sinh viên\", \"sentim"
+  },
+  {
+    "i": 25,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: tài khoản sinh viên. Em không thể ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"thap\", \"product\": \"tài khoản sinh viên\", \"sentiment\": "
+  },
+  {
+    "i": 26,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: tài khoản sinh viên. Em khôn",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"cao\", \"product\": \"tài khoản sinh viên\", \"sentiment\": \""
+  },
+  {
+    "i": 27,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: tài khoản sinh viên. Em khôn",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"trung_binh\", \"product\": \"tài khoản sinh viên\", \"sentim"
+  },
+  {
+    "i": 28,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: tài khoản sinh viên. Em cầ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"thap\", \"product\": \"tài khoản sinh viên\", \"sentiment\": "
+  },
+  {
+    "i": 29,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: tài khoản sinh viên. Em cần thay đ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"cao\", \"product\": \"tài khoản sinh viên\", \"sentiment\": \""
+  },
+  {
+    "i": 30,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: tài khoản sinh viên. Em cần ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"trung_binh\", \"product\": \"tài khoản sinh viên\", \"sentim"
+  },
+  {
+    "i": 31,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: tài khoản sinh viên. Em cần ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"tai_khoan\", \"urgency\": \"thap\", \"product\": \"tài khoản sinh viên\", \"sentiment\": "
+  },
+  {
+    "i": 32,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: giấy tờ sinh viên. Em muốn",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"thap\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"tie"
+  },
+  {
+    "i": 33,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: giấy tờ sinh viên. Em muốn hỏi có ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"cao\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"trun"
+  },
+  {
+    "i": 34,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: giấy tờ sinh viên. Em muốn h",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"trung_binh\", \"product\": \"giấy tờ sinh viên\", \"sentiment\""
+  },
+  {
+    "i": 35,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: giấy tờ sinh viên. Em muốn h",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"thap\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"tie"
+  },
+  {
+    "i": 36,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: giấy tờ sinh viên. Em cần ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"cao\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"tich"
+  },
+  {
+    "i": 37,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: giấy tờ sinh viên. Em cần kiểm tra",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"trung_binh\", \"product\": \"giấy tờ sinh viên\", \"sentiment\""
+  },
+  {
+    "i": 38,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: giấy tờ sinh viên. Em cần ki",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"thap\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"tru"
+  },
+  {
+    "i": 39,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: giấy tờ sinh viên. Em cần ki",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"giay_to\", \"urgency\": \"cao\", \"product\": \"giấy tờ sinh viên\", \"sentiment\": \"tich"
+  },
+  {
+    "i": 40,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: học vụ. Em muốn hỏi thủ tụ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"cao\", \"product\": \"học vụ\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 41,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: học vụ. Em muốn hỏi thủ tục xin ng",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"trung_binh\", \"product\": \"học vụ\", \"sentiment\": \"tich_cuc\""
+  },
+  {
+    "i": 42,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: học vụ. Em muốn hỏi thủ tục ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"thap\", \"product\": \"học vụ\", \"sentiment\": \"tieu_cuc\"}"
+  },
+  {
+    "i": 43,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: học vụ. Em muốn hỏi thủ tục ",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"cao\", \"product\": \"học vụ\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 44,
+    "ticket": "Chào bộ phận hỗ trợ sinh viên UIT. Dịch vụ: học vụ. Em cần kiểm tra vi",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"trung_binh\", \"product\": \"học vụ\", \"sentiment\": \"tieu_cuc\""
+  },
+  {
+    "i": 45,
+    "ticket": "Em xin gửi yêu cầu hỗ trợ. Dịch vụ: học vụ. Em cần kiểm tra việc cập n",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"thap\", \"product\": \"học vụ\", \"sentiment\": \"trung_tinh\"}"
+  },
+  {
+    "i": 46,
+    "ticket": "Nhờ anh/chị phụ trách hỗ trợ em. Dịch vụ: học vụ. Em cần kiểm tra việc",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"cao\", \"product\": \"học vụ\", \"sentiment\": \"tich_cuc\"}"
+  },
+  {
+    "i": 47,
+    "ticket": "Em có vấn đề cần được hướng dẫn. Dịch vụ: học vụ. Em cần kiểm tra việc",
+    "ft_score": 1.0,
+    "ft_pred": "{\"intent\": \"hoc_vu\", \"urgency\": \"trung_binh\", \"product\": \"học vụ\", \"sentiment\": \"tieu_cuc\""
+  }
+]
